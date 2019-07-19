@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+        td {text-align: center}
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section></section>
+        <section data-background-image="assets/look2.jpg">
+            <!--<h1> Review</h1>-->
+            <div style="text-align: right; padding-right:10%;padding-top: 10%">
+            <h1 style="text-align: right"><span style="color: rgb(255, 0, 136);">Learn</span></h1>
+            <h2 style="text-align: right; padding-left: 20%">from the past</h2>
+            <h1 style="text-align: right"><span style="color: rgb(255, 0, 136);">look</span></h1>
+            <h2 style="text-align: right;padding-left: 20%">to the Future</h2>
+            </div>
+            <aside class="notes">
+                是UI组严大大手下一枚dev。
+                杨老师聊天、两个月的四个月了,快三个月 5个月了。老员工
+                <br>
+                三个月时间 有不少收获的。 回顾总结,努力方向做一个展望。
+            </aside>
+            <br>
+            <p style="text-align: center">
+                <small style="color: #0e90d2; padding-left: 20%">@qzhang</small>
+            </p>
+        </section>
+
+        <section id="fragments">
+            <h2 style="text-align: left; padding-left: 20%">Agenda</h2>
+            <ul>
+                <li class="fragment">what I have done and learnt </li>
+                <li class="fragment">what I am gonna do</li>
+            </ul>
+            <aside class="notes">
+                围绕主题,从两个方面展开。
+                1、一番回顾,梳理 做了什么,反思 好的,继续努力,避免
+                <br>
+                2、总结得失,状态调整,明确努力方向.
+            </aside>
+        </section>
+
+
+        <!-- Example of nested vertical slides -->
+        <section>
+            <section>
+                <h2>what I have done and leart?</h2>
+            </section>
+
+            <section data-background-image="assets/loginBackground2.png">
+                <h2 style="text-align: left">Period 1</h2>
+                <p style="text-align: left"> (Apr 11 ~ May15)</p>
+                <ul>
+                    <li class="fragment">Training</li>
+                    <li class="fragment">Js Css Jquery React
+                        <ul>
+                            <li><a target="_blank" href="http://localhost:8888/index.html">demo</a></li>
+                            <li>schedule</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Ruby/Rails
+                        <ul>
+                            <li>search</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Git/Wiki/Jira</li>
+                </ul>
+                <aside class="notes">
+                    第一阶段以学习为主要目标,分为了一下几个方面:
+                    1、组内和组外培训:发展历史、价值观、UI技术栈、项目结构等等 2~3周的时间
+                    <br>
+                    2、后端与业务和框架耦合性太高,rails和业务也不熟悉。
+                    有目标性的制定了两周计划。语法、生命周期、数据建模等等。纯react前端,nodejs的server,相对独立的验证机制的调查问卷demo。
+                    与Grid的适配,开关,部分重构,400行 => 300行。
+                    <br>
+                    3、ruby和元编程课程,语法,设计思想,编程规范,对象模型,rails框架相关的知识
+                    以search模块为切入点,query -> search query -> relation -> query, 包目录结构,RESTFULL route,MVC三层结构的理解。
+                    solr系统要解决的问题以及如何解决这些问题有了初步的认识。包括:倒排索引、表join优化、全量增量同步等等。
+                    <br>
+                    4、还有对工具的使用,如利用git工作空间、本地仓库、远程资源库的概念,pull、checkout、commit、push 分支管理的命令。学习如何合理利用wiki来学习业务上的只是,学习jira进行项目管理的流程。
+
+                </aside>
+            </section>
+            <section data-background-image="assets/givingupjavatoruby3.png">
+                <h2 style="text-align: left">Period 2</h2>
+                <p style="text-align: left"> (May15 ~ Now)</p>
+                <ul>
+                    <li class="fragment">Giving Up Java to Ruby</li>
+                    <li class="fragment">Bug Story Opp</li>
+                </ul>
+
+                <aside class="notes">
+                    1、java 到ruby, duck typing的动态语言风格 经常困惑,文档 debug,执行效率。,
+                    困惑和想法, session分享原因。最基础涉及到ruby的语言风格,动态特性、设计理念,对执行性能和开发效率之间的取舍。
+                    两个小时,大量的时间,请教问题。与其说是sharing过程,我想更准确的来说确实一个学习过程。
+                    <br>
+                    2、主线 bug fix。认同修bug开始慢慢熟悉codebase和business,
+                    技术栈和业务背景很深,业务不熟,技术不精,需求可能会变来变去,硬写会浪费很多无意义的时间。
+                    而去改 bug 业务流程清晰。单个bug涉及到的技术点和业务逻辑不会太广
+                    bug相关的都是组内的dev和qa,对其涉及到的方方面面也特别熟悉,遇到问题也不会block太久。
+                    当修了一段时间,逐步熟悉项目之后,又陆续开始尝试着做一些稍微复杂一点的story,甚至是opp。
+
+                </aside>
+            </section>
+            <section>
+                <h2>Working Achievements</h2>
+                <br>
+                <div>
+                    <div id="bugSummaryDiv" style="width: 50%;height:400px;float: left"></div>
+                    <div id="bugTypeDiv" style="width: 50%;height:380px;padding-top: 20px;float: left"></div>
+                </div>
+                <aside class="notes">
+                    节奏要快,同时进步也是最快的。统计,如图
+                    <br>
+
+                    不仅仅是数字而已,就如bugfix的目的并不仅仅是fixbug一样。
+                    目的是学习,bugfix只是一个过程。
+                    例如SP step1 ,currency的一个bug,本来只是前端js,再搞清楚逻辑,现有逻辑错的,于是把前后端的代码重写了一遍。
+                    后来又被分到3个与之相关的bug,发现因为之前的代码重构。自然而然的解决了。
+                    每一个issue 逻辑和思路、其他模块的影响、更优的解决方案、重构的空间。
+                </aside>
+            </section>
+            <section>
+                <h2>Commits By Day</h2>
+                <br>
+                <div id="chartdiv" style="width: 1000px; height: 400px;"></div>
+                <aside class="notes">
+                    git 提交的 commit数目的变化
+                    原因是,不熟悉,没有充分考虑到对别的模块的影响,不是最优的解决方案,因此有些代码改了又改,产生了较多的commit记录。
+                    后来随着越来越熟,考虑的问题越来越多,越来越全面,反复修改的次数越来越少,造成了commit数下降,并趋于平缓
+                </aside>
+            </section>
+            <section>
+                <h2>Lines Changed By Day</h2>
+                <br>
+                <div id="lineChangeChartDiv" style="width: 1000px; height: 400px;"></div>
+            </section>
+            <section>
+                <h2>SUMMARY</h2>
+                <br>
+                <table style="font-size: smaller">
+                    <thead>
+                    <tr>
+                        <th>Commits</th>
+                        <th>Lines Added</th>
+                        <th>Lines Deleted</th>
+                        <th>Lines Changed</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: center;color: red">132</td>
+                        <td style="text-align: center">4571</td>
+                        <td style="text-align: center">5083</td>
+                        <td style="text-align: center">9654</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2 style="text-align: left">what I have learnt</h2>
+                <ul>
+                    <li>Learning Method</li>
+                    <li>Work Attitude</li>
+                    <li>Interactions <strong style="color: rgb(255, 0, 136)">Over</strong> Processes and Tools</li>
+                </ul>
+                <aside class="notes">
+                    任务驱动的学习模式。
+                    书、资料,全局再去做。行不通。
+                    入职第一周,花几周什么技术,要看哪些书。推翻了,一周内react写demo
+                    任务驱动,更为主动,有针对性的。重点,问题。加深了理解。
+                    如何在有限的时间内做到更多的事情,这种学习模式的转变对我影响是很大的。
+
+                    态度的转变。从个人导向到团队导向。自我为中心,学习工作转变为合作。
+                    每一件事情相关,code都会依赖或者影响。
+                    UT,断点,ESlint
+                    谨慎的态度,整个团队。
+
+                    第三个借用敏捷开发原则的一句话便是:沟通胜过过程和工具。
+                    刚开始修有一些比较简单的bug像修改input的placeholder,validation msg。msg在哪里显示、msg应该显示什么、长度字号,哪些字母要大些,复数,要不要标点符号。
+                    走UAT环境,等PM去验证,反馈、修改。
+                    严大大分了 IO Variant PLC timezone不一致的bug, 当时曹宇也在,他提醒我之前主席做过这一快得东西,后来和主席沟通过后才知道它已经修过了,直接close掉了,避免了时间的浪费。
+                    站会的目的也正是鼓励沟通,信息共享,即使发现潜在问题和风险。
+
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>what I am gonna do?</h2>
+            </section>
+            <section>
+                <h2 style="text-align: left;padding-left: 0%"><span style="color: rgb(255, 0, 136);">Key</span>-points
+                </h2>
+                <ul>
+                    <li class="fragment">Business</li>
+                    <li class="fragment">Technology</li>
+                    <li class="fragment">Communication</li>
+                </ul>
+                <aside class="notes">
+                    1、技术本身是为业务服务,越来越能感受到公司重度依赖业务。不起眼的一个story,Variant deletion, 级联关系以及各种每一级的checkpoint牵扯到业务关系一大堆,后来专门做tech design 梳理清楚,
+                    review过了一遍。最后码加一块也就不到50行左右的样子。大部分的经历都花在业务上了。
+                    <br>
+                    2、技术是一个亘古不变的主题, react,rails
+                    <br>
+                    3、第三个首要目标还是加强沟通意识。培养这种意识,加强沟通能力。沟通让世界更美好。
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h2 style="text-align: left;">Thanks to </h2>
+            <p style="text-align: left;"><strong style="color: #0e90d2;">@myang @zzhang @ycao @jywang @rxia @qguo ...</strong></p>
+            <aside class="notes">
+                最后最重要的, 不仅仅是技术上的指导, 学习方法上建议纠正,工作态度给了我很大的感染。
+                从入职到现在,每天都有好多疑问,不在问问题,就在问问题的路上, 给了很多耐心的指导
+            </aside>
+
+        </section>
+
+        <section style="text-align: left;">
+            <h1>THE END</h1>
+            <p>
+                <!-- - <a href="http://slides.com">Try the online editor</a> <br>-->
+                <!-- - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>-->
+            </p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="amcharts/amcharts.js" type="text/javascript"></script>
+<script src="amcharts/serial.js" type="text/javascript"></script>
+<script src="amcharts/themes/light.js"></script>
+<script src="amcharts/themes/dark.js"></script>
+<script src="amcharts/themes/black.js"></script>
+<script src="amcharts/themes/chalk.js"></script>
+<script src="amcharts/themes/patterns.js"></script>
+
+<script>
+
+    AmCharts.ready(function() {
+        // chart code will go here
+        var chartData =[{"commit_time":"2016-05-23","commits":2},{"commit_time":"2016-05-24","commits":2},{"commit_time":"2016-05-25","commits":2},{"commit_time":"2016-05-26","commits":2},{"commit_time":"2016-05-30","commits":6},{"commit_time":"2016-05-31","commits":12},{"commit_time":"2016-06-02","commits":2},{"commit_time":"2016-06-03","commits":2},{"commit_time":"2016-06-06","commits":8},{"commit_time":"2016-06-07","commits":10},{"commit_time":"2016-06-12","commits":14},{"commit_time":"2016-06-13","commits":2},{"commit_time":"2016-06-14","commits":2},{"commit_time":"2016-06-15","commits":12},{"commit_time":"2016-06-18","commits":4},{"commit_time":"2016-06-20","commits":8},{"commit_time":"2016-06-21","commits":10},{"commit_time":"2016-06-23","commits":2},{"commit_time":"2016-06-27","commits":2},{"commit_time":"2016-07-07","commits":4},{"commit_time":"2016-07-08","commits":4},{"commit_time":"2016-07-11","commits":1},{"commit_time":"2016-07-12","commits":3},{"commit_time":"2016-07-14","commits":6},{"commit_time":"2016-07-15","commits":1},{"commit_time":"2016-07-18","commits":4},{"commit_time":"2016-07-20","commits":2},{"commit_time":"2016-07-21","commits":3}];
+
+
+        var chart = AmCharts.makeChart("chartdiv", {
+//            "axisColor" : 'white',
+//            'color':'white',
+//            'fillColor':'white',
+//            'gridColor':'white',
+            "type": "serial",
+            "theme": "chalk",
+            "marginRight": 80,
+            "dataProvider": chartData,
+            "valueAxes": [{
+                "position": "left",
+                "title": "Count"
+            }],
+            "graphs": [{
+                "id": "g1",
+                "fillAlphas": 0.4,
+                "valueField": "commits",
+                "balloonText": "<div style='margin:5px; font-size:13px;'>Commits:<b>[[value]]</b></div>"
+            }],
+            "chartScrollbar": {
+                "graph": "g1",
+                "scrollbarHeight": 80,
+                "backgroundAlpha": 0,
+                "selectedBackgroundAlpha": 0.1,
+                "selectedBackgroundColor": "white",
+                "graphFillAlpha": 0,
+                "graphLineAlpha": 0.5,
+                "selectedGraphFillAlpha": 0,
+                "selectedGraphLineAlpha": 1,
+                "autoGridCount": true,
+                "color": "white"
+            },
+            "chartCursor": {
+                'bulletSize':'13px',
+                "categoryBalloonDateFormat": "DD MMMM",
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "commit_time",
+            "categoryAxis": {
+                "minPeriod": "mm",
+                "parseDates": true
+            },
+            "export": {
+                "enabled": true,
+                "dateFormat": "YYYY-MM-DD HH:NN:SS"
+            }
+        });
+
+        var lineChangeData =[{"commit_time":"2016-05-23","lines_added":368,"lines_deleted":216},{"commit_time":"2016-05-24","lines_added":168,"lines_deleted":122},{"commit_time":"2016-05-25","lines_added":36,"lines_deleted":38},{"commit_time":"2016-05-26","lines_added":4,"lines_deleted":4},{"commit_time":"2016-05-30","lines_added":232,"lines_deleted":174},{"commit_time":"2016-05-31","lines_added":98,"lines_deleted":90},{"commit_time":"2016-06-02","lines_added":8,"lines_deleted":4},{"commit_time":"2016-06-03","lines_added":20,"lines_deleted":14},{"commit_time":"2016-06-06","lines_added":962,"lines_deleted":934},{"commit_time":"2016-06-07","lines_added":154,"lines_deleted":282},{"commit_time":"2016-06-12","lines_added":142,"lines_deleted":80},{"commit_time":"2016-06-13","lines_added":30,"lines_deleted":6},{"commit_time":"2016-06-14","lines_added":8,"lines_deleted":8},{"commit_time":"2016-06-15","lines_added":148,"lines_deleted":82},{"commit_time":"2016-06-18","lines_added":188,"lines_deleted":132},{"commit_time":"2016-06-20","lines_added":68,"lines_deleted":130},{"commit_time":"2016-06-21","lines_added":1336,"lines_deleted":2614},{"commit_time":"2016-06-23","lines_added":6,"lines_deleted":6},{"commit_time":"2016-06-27","lines_added":14,"lines_deleted":5},{"commit_time":"2016-07-07","lines_added":73,"lines_deleted":23},{"commit_time":"2016-07-08","lines_added":230,"lines_deleted":18},{"commit_time":"2016-07-11","lines_added":19,"lines_deleted":8},{"commit_time":"2016-07-12","lines_added":22,"lines_deleted":7},{"commit_time":"2016-07-14","lines_added":32,"lines_deleted":27},{"commit_time":"2016-07-15","lines_added":1,"lines_deleted":1},{"commit_time":"2016-07-18","lines_added":121,"lines_deleted":4},{"commit_time":"2016-07-20","lines_added":22,"lines_deleted":21},{"commit_time":"2016-07-21","lines_added":61,"lines_deleted":33}];
+
+
+        var lineChangeChart = AmCharts.makeChart("lineChangeChartDiv", {
+//            "axisColor" : 'white',
+//            'color':'white',
+//            'fillColor':'white',
+//            'gridColor':'white',
+            "type": "serial",
+            "theme": "dark",
+            "marginRight": 80,
+            "dataProvider": lineChangeData,
+            "valueAxes": [{
+                "position": "left",
+                "title": "Count"
+            }],
+            "graphs": [{
+                "id": "g1",
+                "fillAlphas": 0.4,
+                "valueField": "lines_added",
+                "balloonText": "<div style='margin:5px; font-size:13px;'>Line Added:<b>[[value]]</b></div>"
+            },
+                {
+                    "id": "g2",
+                    "fillAlphas": 0.4,
+                    "valueField": "lines_deleted",
+                    "balloonText": "<div style='margin:5px; font-size:13px;'>Lines Deleted:<b>[[value]]</b></div>"
+                }],
+            "chartScrollbar": {
+                "graph": "g1",
+                "scrollbarHeight": 80,
+                "backgroundAlpha": 0,
+                "selectedBackgroundAlpha": 0.1,
+                "selectedBackgroundColor": "white",
+                "graphFillAlpha": 0,
+                "graphLineAlpha": 0.5,
+                "selectedGraphFillAlpha": 0,
+                "selectedGraphLineAlpha": 1,
+                "autoGridCount": true,
+                "color": "white"
+            },
+            "chartCursor": {
+                "categoryBalloonDateFormat": "DD MMMM",
+                "cursorPosition": "mouse"
+            },
+            "categoryField": "commit_time",
+            "categoryAxis": {
+                "minPeriod": "mm",
+                "parseDates": true
+            },
+            "export": {
+                "enabled": true,
+                "dateFormat": "YYYY-MM-DD"
+            }
+        });
+
+        lineChangeChart.addListener("dataUpdated", zoomChart);
+        chart.addListener("dataUpdated", zoomChart);
+// when we apply theme, the dataUpdated event is fired even before we add listener, so
+// we need to call zoomChart here
+        zoomChart();
+// this method is called when chart is first inited as we listen for "dataUpdated" event
+        function zoomChart() {
+            // different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
+            chart.zoomToIndexes(chartData.length - 250, chartData.length - 100);
+            lineChangeChart.zoomToIndexes(lineChangeData.length - 250, lineChangeData.length - 100);
+        }
+
+    });
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history : true,
+        center  : true,
+//        // Parallax background image
+//        parallaxBackgroundImage: 'assets/look2.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+//
+//        // Parallax background size
+//        parallaxBackgroundSize: '2000px 1400px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+//
+//        // Number of pixels to move the parallax background per slide
+//        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+//        parallaxBackgroundHorizontal: 200,
+//        parallaxBackgroundVertical: 50,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function() {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true},
+            {src: 'socket.io/socket.io.js', async: true},
+            {src: 'plugin/notes-server/client.js', async: true}
+        ]
+    });
+
+    Reveal.addEventListener('slidechanged', function(event) {
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        if (event.indexh === 3 && event.indexv === 3) {
+            var bugSummarychart = echarts.init(document.getElementById('bugSummaryDiv'));
+            var summaryOption = {
+                title  : {
+                    text     : 'Total 47',
+                    subtext  : 'Apr 11 ~ Jul 24',
+                    x        : 'center',
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color     : 'white'
+                    }
+                },
+                color  : ['#3398DB'],
+                tooltip: {
+                    trigger    : 'axis',
+                    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                        type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend : {
+                    orient   : 'vertical',
+                    left     : 'right',
+                    data     : ['BUG', 'STORY', 'OPP', 'ESC'],
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color     : 'white'
+                    }
+                },
+                grid   : {
+                    left        : '3%',
+                    right       : '4%',
+                    bottom      : '3%',
+                    containLabel: true
+                },
+                xAxis  : [
+                    {
+                        type    : 'category',
+                        data    : ['OPP', 'ESC', 'STORY', 'BUG'],
+                        axisTick: {
+                            alignWithLabel: true
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: 'white'
+                            }
+                        }
+                    }
+                ],
+
+                yAxis : [
+                    {
+                        type    : 'value',
+                        axisLine: {
+                            lineStyle: {
+                                color: 'white'
+                            }
+                        }
+                    }
+                ],
+                series: [
+                    {
+                        name    : 'Issue Count',
+                        type    : 'bar',
+                        barWidth: '60%',
+                        data    : [1, 9, 11, 26]
+                    }
+                ]
+            };
+            setTimeout(function() {
+                // 使用刚指定的配置项和数据显示图表。
+                bugSummarychart.setOption(summaryOption);
+            }, 500);
+
+            var bugTypeChart = echarts.init(document.getElementById('bugTypeDiv'), 'gray');
+            var typeOption = {
+                label: {
+                    normal: {
+                        show    : true,
+                        position: 'inside'
+                    }
+                },
+                title  : {
+                    text     : 'Proportion',
+                    subtext  : 'Apr 11 ~ Jul 24',
+                    x        : 'center',
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color     : 'white'
+                    }
+                },
+                tooltip: {
+                    trigger  : 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend : {
+                    orient   : 'vertical',
+                    left     : 'right',
+                    data     : ['BUG', 'STORY', 'OPP', 'ESC'],
+                    textStyle: {
+                        fontWeight: 'normal',
+                        color     : 'white'
+                    }
+                },
+                series : [
+                    {
+                        name     : 'proportion',
+                        type     : 'pie',
+                        radius   : '50%',
+                        center   : ['50%', '60%'],
+                        data     : [
+                            {value: 26, name: 'BUG'},
+                            {value: 11, name: 'STORY'},
+                            {value: 1, name: 'OPP'},
+                            {value: 9, name: 'ESC'}
+                        ],
+                        itemStyle: {normal: {label: {show: true}}}
+                    }
+                ]
+            };
+
+            setTimeout(function() {
+                // 使用刚指定的配置项和数据显示图表。
+                bugTypeChart.setOption(typeOption);
+            }, 500);
+        } else {
+
+
+        }
+    });
+
+    Reveal.addEventListener('ready', function(event) {
+    });
+
+</script>
+
+</body>
+</html>
